@@ -1,4 +1,4 @@
-package basics;
+
 
 /* Create a class
  * => A class is a blueprint of an object.
