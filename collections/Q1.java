@@ -5,8 +5,9 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 public class Q1 {
-    public void ArrayListOperatios() {
-        try (Scanner scanner = new Scanner(System.in)) {
+    public void ArrayListOperatios(Scanner scanner) {
+        System.out.printf("\t\t\tArrayList\t\t\t\n");
+        try {
             ArrayList<String> list = new ArrayList<>();
             for (int i = 0; i < 10; i++) {
                 System.out.print("Add a string: ");
@@ -38,7 +39,7 @@ public class Q1 {
             String desiredElement = scanner.next();
             if (list.get(desiredIdx).equals(desiredElement)) {
                 System.out.println("Element found!");
-            }else{
+            } else {
                 System.out.println("Not found!");
             }
 
@@ -52,8 +53,6 @@ public class Q1 {
 
             list.removeAll(list);
             System.out.println(list);
-
-            scanner.close();
         } catch (Exception e) {
             System.out.println(e.toString());
         }
